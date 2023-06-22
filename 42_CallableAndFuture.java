@@ -36,5 +36,7 @@ class CallableAndFuture {
                 e.printStackTrace();
             }
         }
+        
+        service.shutdown();
     }
 }
