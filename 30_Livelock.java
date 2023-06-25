@@ -44,7 +44,7 @@ class Livelock {
         while(true) {
             try {
                 lock2.tryLock(50, TimeUnit.MILLISECONDS);
-                System.out.println("Worker2 acquires the lock1...");
+                System.out.println("Worker2 acquires the lock2...");
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
