@@ -37,6 +37,7 @@ class CallableAndFuture {
             }
         }
         
+        // Graceful shutdown - waiting for all threads are finished
         service.shutdown();
     }
 }
