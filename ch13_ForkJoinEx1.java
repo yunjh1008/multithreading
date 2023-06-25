@@ -54,7 +54,7 @@ class ForkJoinEx1 {
         Long start = System.currentTimeMillis();
         Long result = pool.invoke(task);
         Long end = System.currentTimeMillis();
-        System.out.println("Elapsed time (1 core): " + (end - start));
+        System.out.println("Elapsed time (1 core): " + (end - start)); // 658 ms
         System.out.printf("Sum of %d to %d = %d\n", from, to, result);
         System.out.println();
 
@@ -64,7 +64,7 @@ class ForkJoinEx1 {
             result += i;
         }
         end = System.currentTimeMillis();
-        System.out.println("Elapsed time (4 cores): " + (end - start));
+        System.out.println("Elapsed time (4 cores): " + (end - start)); // 142 ms
         System.out.printf("Sum of %d to %d = %d\n", from, to, result);
     }
 }
